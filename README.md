@@ -16,5 +16,6 @@ SOLR_JAVA_MEM="-Xms10g -Xmx10g"
 
  /opt/solr/bin/solr create_collection -shards 4  -replicationFactor 2 -n sku-config -c sku
  
+ sudo su - solr -c '/opt/solr/bin/solr create -c protein -d /var/solr/data/default_conf'
  
 
